@@ -1,0 +1,11 @@
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/ctrlc-f41169c3b5384e22.d: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/error.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/unix/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/signal.rs
+
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/libctrlc-f41169c3b5384e22.rlib: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/error.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/unix/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/signal.rs
+
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/libctrlc-f41169c3b5384e22.rmeta: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/error.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/unix/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/signal.rs
+
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/lib.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/error.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/mod.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/platform/unix/mod.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ctrlc-3.5.1/src/signal.rs:

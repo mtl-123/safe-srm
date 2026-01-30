@@ -1,0 +1,14 @@
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/serde-07d2d65c00e6b408.d: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /opt/develop/projects/Rust_Project/safe-srm/target/release/build/serde-3b05910e70720de9/out/private.rs
+
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/libserde-07d2d65c00e6b408.rlib: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /opt/develop/projects/Rust_Project/safe-srm/target/release/build/serde-3b05910e70720de9/out/private.rs
+
+/opt/develop/projects/Rust_Project/safe-srm/target/release/deps/libserde-07d2d65c00e6b408.rmeta: /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /opt/develop/projects/Rust_Project/safe-srm/target/release/build/serde-3b05910e70720de9/out/private.rs
+
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/meitaolin/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/opt/develop/projects/Rust_Project/safe-srm/target/release/build/serde-3b05910e70720de9/out/private.rs:
+
+# env-dep:OUT_DIR=/opt/develop/projects/Rust_Project/safe-srm/target/release/build/serde-3b05910e70720de9/out

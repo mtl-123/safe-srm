@@ -146,6 +146,7 @@ jobs:
           BIN_FILE="${{ steps.package.outputs.final_bin }}"
           SUM_FILE="${{ steps.package.outputs.final_sum }}"
           TAG_VERSION="${{ steps.package.outputs.version }}"
+          REPO="${{ github.repository }}"
           if [ ! -f "$BIN_FILE" ] || [ ! -f "$SUM_FILE" ]; then
             echo "FATAL: Release files missing!"
             ls -lh release/
@@ -157,11 +158,11 @@ jobs:
           else
             RELEASE_TITLE="Release ${TAG_VERSION} (Static Binary, UPX Compressed)"
           fi
-          gh release create "${TAG_VERSION}" \
-            --title "${RELEASE_TITLE}" \
+          gh api -X DELETE repos/$REPO/releases/tags/$TAG_VERSION 2>/dev/null || true
+          gh release create "$TAG_VERSION" \
+            --title "$RELEASE_TITLE" \
             --generate-notes \
-            --force \
-            --repo ${{ github.repository }} \
+            --repo "$REPO" \
             "$BIN_FILE" \
             "$SUM_FILE"
-          gh release view "${TAG_VERSION}" --repo ${{ github.repository }} --json assets --jq '.assets[] | {name, size}'
+          gh release view "$TAG_VERSION" --repo "$REPO" --json assets --jq '.assets[] | {name, size}'

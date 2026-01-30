@@ -226,27 +226,42 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          # 验证gh权限
-          gh auth status
+          # 调试：打印关键信息
+          echo "=== 调试：Release发布前置检查 ==="
+          echo "github.ref: ${{ github.ref }}"
+          echo "final_bin: ${{ steps.package.outputs.final_bin }}"
+          echo "final_sum: ${{ steps.package.outputs.final_sum }}"
+          echo "release目录文件："
+          ls -lh release/ || echo "release目录不存在"
+          echo "当前工作目录："
+          pwd
+
+          # 显式认证gh CLI
+          echo "${{ secrets.GITHUB_TOKEN }}" | gh auth login --with-token
+          gh auth status || { echo "gh认证失败"; exit 1; }
+
           # 验证文件存在
           if [ ! -f "${{ steps.package.outputs.final_bin }}" ] || [ ! -f "${{ steps.package.outputs.final_sum }}" ]; then
             echo "FATAL: Release files missing!"
-            ls -lh release/
+            ls -lh release/ || true
             exit 1
           fi
-          # 根据压缩状态调整标题
+
+          # 调整Release标题
           if [ "${{ steps.upx_compress.outputs.compressed }}" == "false" ]; then
             RELEASE_TITLE="Release ${{ steps.package.outputs.version }} (Static Binary)"
           else
             RELEASE_TITLE="Release ${{ steps.package.outputs.version }} (Static Binary, UPX Compressed)"
           fi
-          # 创建Release
+
+          # 创建Release（覆盖已有Tag的Release）
           gh release create ${{ steps.package.outputs.version }} \
             --title "$RELEASE_TITLE" \
             --generate-notes \
-            --repo ${{ github.repository }} \
+            --force \
             ${{ steps.package.outputs.final_bin }} \
             ${{ steps.package.outputs.final_sum }}
-          # 验证发布
+
+          # 验证发布结果
           echo "✅ Release published successfully!"
-          gh release view ${{ steps.package.outputs.version }} --repo ${{ github.repository }} --json assets --jq '.assets[].name'
+          gh release view ${{ steps.package.outputs.version }} --json assets --jq '.assets[] | {name, size}'

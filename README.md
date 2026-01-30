@@ -101,7 +101,7 @@
    ```
 2. 安装开发依赖（Debian 13 环境）
    ```bash
-   sudo apt update && sudo apt install -y build-essential libssl-dev pkg-config rustup git upx
+   sudo apt update && sudo apt install -y build-essential libssl-dev pkg-config rustup git upx jq
    ```
 3. 初始化Rust环境（若未安装）
    ```bash

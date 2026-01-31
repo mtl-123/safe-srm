@@ -841,6 +841,20 @@ autoload -Uz compinit && compinit
 fpath=(~/.zsh/completions $fpath)
 ```
 
+使用zinit 管理
+mkdir -p ~/.srm
+把_srm 复制到  ~/.srm
+# 添加自定义补全函数目录
+fpath=(~/.srm $fpath)
+
+在 .zshrc 中加载（使用 Zinit）
+# 在 Zinit 插件区添加
+# ==============================================================================
+# 自定义补全函数支持
+# ==============================================================================
+zinit ice lucid wait"0"
+zinit snippet OMZP::srm/_srm
+
 ### 步骤 3：生效配置
 ```zsh
 # 重新加载zsh配置
